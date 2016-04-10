@@ -31,9 +31,10 @@
         android:textSize="20dp"
         android:text="Welcome to the Learning Number Game! This is a game for learning numbers by comparing the value of the numbers and point out the greater number."/>
 
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -44,8 +45,8 @@
             android:padding="35dp"
             android:id="@+id/btn1"
             android:textSize="25dp"
-            android:text="@string/n1"
-            android:onClick="compareNumber1"
+            android:text=" "
+            android:onClick="handleLeftBtnClick"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"/>
 
@@ -56,10 +57,33 @@
             android:padding="35dp"
             android:id="@+id/btn2"
             android:textSize="25dp"
-            android:text="@string/n2"
-            android:onClick="compareNumber2"
+            android:text=" "
+            android:onClick="handleRightBtnClick"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gp"
+            android:textSize="20dp"
+            android:textColor="#ff9966"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gw"
+            android:textSize="20dp"
+            android:textColor="#ff9966"
+            android:text=""/>
 
     </LinearLayout>
 
