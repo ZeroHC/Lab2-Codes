@@ -16,18 +16,29 @@ import java.util.Random;
 
 public class LearningNumbers extends AppCompatActivity {
 
+<<<<<<< HEAD
     //region old code
     /*Random r = new Random();
 
     public int n1 =  r.nextInt(11);
     public int n2 =  r.nextInt(11);
+=======
+    Random r = new Random();
+
+    public int n1 = r.nextInt(11);
+    public int n2 = r.nextInt(11);
+>>>>>>> origin/master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         while(n1==n2)
         {
+<<<<<<< HEAD
             n2 =  r.nextInt(11);
+=======
+            n2 = r.nextInt(11);
+>>>>>>> origin/master
         }
 
         super.onCreate(savedInstanceState);
@@ -76,12 +87,21 @@ public class LearningNumbers extends AppCompatActivity {
 
     public void refresh(int temp1, int temp2)
     {
+<<<<<<< HEAD
         n1 =  r.nextInt(11);
         n2 =  r.nextInt(11);
 
         while(n1==n2 || (n1==temp1 || n1==temp2) || (n2==temp1 || n2==temp2))
         {
             n2 =  r.nextInt(11);
+=======
+        n1 = r.nextInt(11);
+        n2 = r.nextInt(11);
+
+        while(n1==n2 || (n1==temp1 || n1==temp2) || (n2==temp1 || n2==temp2))
+        {
+            n2 = r.nextInt(11);
+>>>>>>> origin/master
         }
 
         Button btn1 = (Button) findViewById(R.id.btn1);
